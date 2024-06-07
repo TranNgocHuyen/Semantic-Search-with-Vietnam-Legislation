@@ -7,6 +7,7 @@ from transformers import AutoModel, AutoTokenizer
 from pyvi.ViTokenizer import tokenize
 
 
+# Preprocess_text function
 def preprocess_text(text):
 
     processed_text = tokenize(text)
@@ -14,6 +15,7 @@ def preprocess_text(text):
     return processed_text
 
 
+# Load model and embedding text funtion
 def embedding_text(text):
 
 
