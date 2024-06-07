@@ -9,7 +9,7 @@ import pyodbc
 from preprocessing import xu_ly_text
 # Preprocess_text function
 def preprocess_text(text):
-    text = xu_ly_text(text)
+    _, text = xu_ly_text(text) # chọn xử lý theo điều, đoạn
     processed_text = tokenize(text)
     return processed_text
 

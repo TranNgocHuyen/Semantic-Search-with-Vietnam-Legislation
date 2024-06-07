@@ -47,7 +47,8 @@ def data_sql():
         else:
             print("Table 'data_vecter' already exists.")
             
-        sql_query = "SELECT TOP 1000 * FROM [DataV03].[dbo].[data_ND]"  # Replace with your actual query
+        sql_query = "SELECT TOP 1000 * FROM [DataV03].[dbo].[data_ND_dieu]"  
+        # CHỌN DATABASE CÂU 'data_ND' ?ĐIỀU 'data_ND_dieu' ?ĐOẠN
 
         cursor.execute(sql_query)
         rows = cursor.fetchall()
